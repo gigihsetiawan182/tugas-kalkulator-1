@@ -1,0 +1,106 @@
+unit Unit1;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls;
+
+type
+  TForm1 = class(TForm)
+    Button1: TButton;
+    Button2: TButton;
+    Button3: TButton;
+    Button4: TButton;
+    Button5: TButton;
+    Button6: TButton;
+    Label1: TLabel;
+    Label2: TLabel;
+    Label3: TLabel;
+    procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
+    procedure Button3Click(Sender: TObject);
+    procedure Button4Click(Sender: TObject);
+    procedure Button6Click(Sender: TObject);
+    procedure Button5Click(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  Form1: TForm1;
+
+implementation
+
+{$R *.dfm}
+
+procedure TForm1.Button1Click(Sender: TObject);
+Var Angka1, Angka2, Hasil:Integer;
+begin
+Angka1 :=StrToInt(Edit1.Text);
+Angka2 :=StrToInt(Edit2.Text);
+
+Hasil:=Angka1+Angka2;
+
+Edit3.Text:=IntToStr(Hasil);
+
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+Var Angka1, Angka2, Hasil:Integer;
+begin
+Angka1 :=StrToInt(Edit1.Text);
+Angka2 :=StrToInt(Edit2.Text);
+
+Hasil:=Angka1-Angka2;
+
+Edit3.Text:=IntToStr(Hasil);
+
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+Var Angka1, Angka2, Hasil:Integer;
+begin
+Angka1 :=StrTo(Edit1.Text);
+Angka2 :=StrTo(Edit2.Text);
+
+Hasil:=Angka1*Angka2;
+
+Edit3.Text:=IntToStr(Hasil);
+
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+Var Angka1, Angka2, Hasil:Integer;
+begin
+Angka1 :=StrToInt(Edit1.Text);
+Angka2 :=StrToInt(Edit2.Text);
+
+Hasil:=Angka1/Angka2;
+
+Edit3.Text:=IntToStr(Hasil);
+
+end;
+
+procedure TForm1.Button6Click(Sender: TObject);
+begin
+Edit1.Text:=' ';
+Edit2.Text:=' ';
+Edit3.Text:=' ';
+end;
+
+procedure TForm1.Button5Click(Sender: TObject);
+begin
+Edit1.
+end;
+
+end.
+
+
+
+
+
+
+
